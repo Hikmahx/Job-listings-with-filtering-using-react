@@ -1,0 +1,527 @@
+/* MOBILE FIRST */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  background: #effafa;
+}
+
+body .attribution {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+header {
+  height: 27vh;
+}
+
+header .mobile {
+  width: 100%;
+  background: #5ba4a4;
+}
+
+header .desktop {
+  display: none;
+}
+
+main {
+  background: #effafa;
+}
+
+main .filter-container {
+  position: relative;
+  background: #fff;
+  padding: 2rem 1.9rem 0.4rem;
+  margin: -3.1rem 2.4rem -0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0rem 2rem 2rem -1rem #d7e9ec;
+          box-shadow: 0rem 2rem 2rem -1rem #d7e9ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  display: none;
+}
+
+main .filter-container .selected-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 5rem;
+  overflow: hidden;
+}
+
+main .filter-container .selected-btn button {
+  margin: 0 1.4rem 1.6rem 0;
+  padding: 0 0 0 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background: #eef6f6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #eef6f6), color-stop(80%, #5ba4a4));
+  background: linear-gradient(90deg, #eef6f6 80%, #5ba4a4 80%);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  color: #5ba4a4;
+  height: 3.2rem;
+  text-align: center;
+  letter-spacing: -0.3px;
+  position: relative;
+}
+
+main .filter-container .selected-btn button span {
+  width: 2rem;
+  background: #5ba4a4;
+  padding: 1rem 0.9rem;
+  position: relative;
+  right: 0;
+}
+
+main .filter-container .selected-btn button span:hover {
+  cursor: pointer;
+  background: #2c3a3a;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+main .filter-container .selected-btn button span img {
+  position: relative;
+  top: 0.2rem;
+  bottom: 0;
+}
+
+main .filter-container .clear {
+  position: absolute;
+  right: 2.5rem;
+  top: 45%;
+  color: #7b8e8e;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: auto;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.2px;
+}
+
+main .filter-container .clear:hover {
+  cursor: pointer;
+  color: #5ba4a4;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+main .filter-container .clear:hover::after {
+  content: '';
+  position: absolute;
+  background-color: #5ba4a4;
+  height: 0.1rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+}
+
+main ul.jobs {
+  padding: 6.1rem 2.4rem 0.01rem 2.4rem;
+}
+
+main ul.jobs li.job {
+  background: #fff;
+  padding: 1.9rem 2.4rem;
+  margin-bottom: 4rem;
+  position: relative;
+  height: 25.7rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
+          box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
+}
+
+main ul.jobs li.job.non-active {
+  display: none;
+}
+
+main ul.jobs li.job.active {
+  display: block;
+}
+
+main ul.jobs li.job:last-child {
+  margin-bottom: 3.35rem;
+}
+
+main ul.jobs li.job.cyan-border {
+  /*for featured*/
+}
+
+main ul.jobs li.job.cyan-border::before {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 100%;
+  background: #5ea4a6;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+main ul.jobs li.job img {
+  position: relative;
+  width: 4.8rem;
+  height: 4.8rem;
+  top: -4.4rem;
+  margin-bottom: -4rem;
+}
+
+main ul.jobs li.job .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+main ul.jobs li.job .company h2 {
+  color: #5ba4a4;
+  font-size: 1.3rem;
+  margin-right: 1.35rem;
+  white-space: nowrap;
+}
+
+main ul.jobs li.job .company span {
+  margin: 0 0.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.4rem 0.8rem 0;
+  border-radius: 3rem;
+  height: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+main ul.jobs li.job .company .cyan {
+  background: #5ba4a4;
+}
+
+main ul.jobs li.job .company .black {
+  background: #2c3a3a;
+}
+
+main ul.jobs li.job h3 {
+  margin-top: 1.2rem;
+}
+
+main ul.jobs li.job h3:hover {
+  cursor: pointer;
+  color: #5ba4a4;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+main ul.jobs li.job .details {
+  margin-top: 1.6rem;
+  padding-bottom: 1.85rem;
+  border-bottom: #c0c2c1 0.1rem solid;
+}
+
+main ul.jobs li.job .details span {
+  color: #7b8e8e;
+  font-size: 1.3rem;
+  margin-right: 1.7rem;
+  position: relative;
+}
+
+main ul.jobs li.job .details span:not(:last-child)::after {
+  content: '.';
+  margin-left: 0.4rem;
+  font-size: 3rem;
+  position: absolute;
+  top: -1.9rem;
+  -webkit-filter: blur(0.06rem);
+          filter: blur(0.06rem);
+  opacity: 0.7;
+}
+
+main ul.jobs li.job .filter {
+  margin-top: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main ul.jobs li.job .filter button {
+  margin-bottom: 1.6rem;
+  margin-right: 1.4rem;
+  padding: 1rem 0.8rem;
+  border: none;
+  background: #eef6f6;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  color: #5ba4a4;
+  height: 3.2rem;
+  text-align: center;
+  letter-spacing: -0.3px;
+  border-radius: 0.3rem;
+}
+
+main ul.jobs li.job .filter button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #5ba4a4;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 361px) {
+  main ul.jobs {
+    padding: 6.1rem 2rem 2rem 2rem;
+  }
+  main ul.jobs li.job .filter button {
+    margin-right: 1rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 341px) {
+  main ul.jobs li.job {
+    padding: 1.9rem 0.5rem 1.9rem 2rem;
+  }
+}
+
+@media (max-width: 319px) {
+  main ul.jobs li.job {
+    height: 29rem;
+  }
+}
+
+@media (min-width: 380px) {
+  header .mobile {
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 27vh;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 15.6rem;
+  }
+  header .mobile {
+    display: none;
+  }
+  header .desktop {
+    display: block;
+    width: 100%;
+    height: 15.6rem;
+    background: #5ba4a4;
+  }
+  main .filter-container {
+    margin: 0 15%;
+  }
+  main ul.jobs {
+    margin: 0 12%;
+  }
+  main ul.jobs li.job {
+    margin: auto auto 4rem;
+    max-width: 100rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    padding-bottom: 4rem;
+  }
+  main .filter-container {
+    margin: 0 10.4%;
+    position: relative;
+    top: -3.8rem;
+  }
+  main ul.jobs {
+    margin: 0 8%;
+  }
+  main ul.jobs li.job {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 9% 36% 55%;
+        grid-template-columns: 9% 36% 55%;
+    -ms-grid-rows: (20%)[5];
+        grid-template-rows: repeat(5, 20%);
+    height: 16rem;
+  }
+  main ul.jobs li.job img {
+    top: -1.7rem;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    width: 6rem;
+    height: 6rem;
+  }
+  main ul.jobs li.job .company {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: -0.5rem;
+  }
+  main ul.jobs li.job h3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    margin-top: 0.5rem;
+  }
+  main ul.jobs li.job .details {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    border: none;
+    margin-top: 1.3rem;
+  }
+  main ul.jobs li.job .filter {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    margin-top: -0.3rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    padding: 0 12rem;
+  }
+  main .filter-container {
+    margin: 0 auto;
+    max-width: 100rem;
+    width: 83.2%;
+  }
+  main ul.jobs {
+    padding: 6.1rem 0 4rem;
+    margin: 0 9rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  main .filter-container {
+    max-width: none;
+    width: 92.67%;
+  }
+  main ul.jobs {
+    margin: 0 4.4rem;
+    padding-top: 7.4rem;
+    padding-bottom: 4.65rem;
+  }
+  main ul.jobs li.job {
+    height: 15.3rem;
+    margin-bottom: 2.4rem;
+    max-width: none;
+    padding: 1.9rem 4rem;
+    gap: 0 2rem;
+  }
+  main ul.jobs li.job img {
+    height: 8.8rem;
+    width: 8.8rem;
+    top: -3.2rem;
+  }
+  main ul.jobs li.job .company {
+    margin-top: -1.7rem;
+  }
+  main ul.jobs li.job .company h2 {
+    font-size: 1.4rem;
+  }
+  main ul.jobs li.job h3 {
+    font-size: 1.8rem;
+    margin-top: 0.4rem;
+  }
+  main ul.jobs li.job .details {
+    margin-top: 1.5rem;
+  }
+  main ul.jobs li.job .details span {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+  }
+  main ul.jobs li.job .details span:not(:last-child)::after {
+    margin-left: 1.2rem;
+  }
+  main ul.jobs li.job .filter {
+    margin-right: 3rem;
+  }
+  main ul.jobs li.job .filter button {
+    margin-right: 1.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
