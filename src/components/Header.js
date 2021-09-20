@@ -1,6 +1,6 @@
 import React from 'react';
-import bgMobile from '../images/bg-header-mobile.svg';
-import bgDesktop from '../images/bg-header-desktop.svg';
+import bgMobile from '../assets/bg-header-mobile.svg';
+import bgDesktop from '../assets/bg-header-desktop.svg';
 
 const Header = ()=> {
     return (
