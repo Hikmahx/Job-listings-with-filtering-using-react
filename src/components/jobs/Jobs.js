@@ -1,28 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import JobItem from './JobItem';
 
 const Jobs = props => {
-  const jobs = [
-    // { id: 1, name: 'kljd' },
-    // { id: 2, name: 'dfljl' },
-    // { id: 3, name: 'fsajkl;' },
-    // { id: 4, name: 'jfdsl;jfl;afkjd' },
-    {
-      id: 5,
-      company: 'Photosnap',
-      logo: './images/photosnap.svg',
-      new: true,
-      featured: true,
-      position: 'Senior Frontend Developer',
-      role: 'Frontend',
-      level: 'Senior',
-      postedAt: '1d ago',
-      contract: 'Full Time',
-      location: 'USA Only',
-      languages: ['HTML', 'CSS', 'JavaScript'],
-      tools: [],
-    },
-  ];
+  
+  useEffect(() => {
+    getData();
+  }, []);
+  
+  const [jobs, setJobs] = useState([]);
+  
+  const getData = async () =>{
+    const data = await fetch('./data.json');
+
+    const jobs = await data.json();
+
+    // let items = jobs
+    // console.log(jobs);
+    setJobs(jobs);
+  }
+
+
 
   const itemList = item => {
     return <button data-tools={item}>{item}</button>;
