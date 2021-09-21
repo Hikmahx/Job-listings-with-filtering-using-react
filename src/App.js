@@ -11,6 +11,10 @@ function App() {
   
   const [jobs, setJobs] = useState([]);
   
+
+  const [selectedBtn, setSelectedBtn] = useState([]);
+
+  
   const getData = async () =>{
     const data = await fetch('./data.json');
 
@@ -20,13 +24,15 @@ function App() {
   }
 
   const click = (e) =>{
-    console.log(e.target.textContent)
+    let btn = e.target.textContent
+
+    setSelectedBtn(oldBtn =>[...oldBtn, btn])
   }
   
   return <div className='App'>
     <Header />
     <main>
-      <Filter/>
+      <Filter btn= {click}  selectedBtn = {selectedBtn}/>
       <Jobs jobs = {jobs} click = {click} />
     </main>
   </div>;
