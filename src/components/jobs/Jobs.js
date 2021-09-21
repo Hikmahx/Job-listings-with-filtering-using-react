@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import JobItem from './JobItem';
 
 const Jobs = props => {
@@ -27,7 +27,7 @@ const Jobs = props => {
   
 
   return (
-    <main>
+    <Fragment>
     <ul className='jobs'>
       {jobs.map(job => (
         <JobItem
@@ -48,7 +48,7 @@ const Jobs = props => {
         />
       ))}
     </ul>
-    </main>
+    </Fragment>
   );
 };
 
