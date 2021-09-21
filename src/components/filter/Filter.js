@@ -1,7 +1,7 @@
 import React from 'react';
 import FilterBtn from './FilterBtn';
 
-function Filter() {
+const Filter = ()=> {
   return (
     <div className='filter-container'>
       <div className='selected-btn'>
