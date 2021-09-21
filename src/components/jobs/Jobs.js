@@ -1,10 +1,10 @@
 import React, { Fragment} from 'react';
 import JobItem from './JobItem';
 
-const Jobs = ({jobs}) => {
-  
+const Jobs = ({jobs, click}) => {
+
   const itemList = item => {
-    return <button data-tools={item}>{item}</button>;
+    return <button onClick={click} data-tools={item}>{item}</button>;
   };
   
 
@@ -27,6 +27,7 @@ const Jobs = ({jobs}) => {
           languages = {job.languages.map(itemList)}
           // languages={job.languages.map((item)=>{return<button data-tool={item}>{item}</button>})}
           tools={job.tools.map(itemList)}
+          click= {click}
         />
       ))}
     </ul>

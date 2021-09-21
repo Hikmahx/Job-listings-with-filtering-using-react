@@ -22,8 +22,8 @@ const JobItem = props => {
           <span>{props.location}</span>
         </div>
         <div className='filter'>
-          <button data-role={props.role}>{props.role}</button>
-          <button data-level={props.level}>{props.level}</button>
+          <button data-role={props.role} onClick= {props.click} >{props.role}</button>
+          <button data-level={props.level} onClick= {props.click} >{props.level}</button>
            {props.languages}
           {props.tools} 
         </div>
