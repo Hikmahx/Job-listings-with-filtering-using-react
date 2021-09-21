@@ -6,8 +6,10 @@ import Jobs from './components/jobs/Jobs';
 function App() {
   return <div className='App'>
     <Header />
-    <Filter/>
-    <Jobs />
+    <main>
+      <Filter/>
+      <Jobs />
+    </main>
   </div>;
 }
 
