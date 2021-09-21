@@ -1,26 +1,8 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment} from 'react';
 import JobItem from './JobItem';
 
-const Jobs = props => {
+const Jobs = ({jobs}) => {
   
-  useEffect(() => {
-    getData();
-  }, []);
-  
-  const [jobs, setJobs] = useState([]);
-  
-  const getData = async () =>{
-    const data = await fetch('./data.json');
-
-    const jobs = await data.json();
-
-    // let items = jobs
-    // console.log(jobs);
-    setJobs(jobs);
-  }
-
-
-
   const itemList = item => {
     return <button data-tools={item}>{item}</button>;
   };
