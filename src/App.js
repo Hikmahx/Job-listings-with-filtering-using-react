@@ -18,12 +18,16 @@ function App() {
 
     setJobs(jobs);
   }
+
+  const click = (e) =>{
+    console.log(e.target.textContent)
+  }
   
   return <div className='App'>
     <Header />
     <main>
       <Filter/>
-      <Jobs jobs = {jobs} />
+      <Jobs jobs = {jobs} click = {click} />
     </main>
   </div>;
 }
