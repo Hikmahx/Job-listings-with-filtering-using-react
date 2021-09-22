@@ -33,11 +33,15 @@ function App() {
     let btn = e.target.parentElement.parentElement.textContent
     setSelectedBtn(selectedBtn.filter((selectBtn)=> selectBtn !== btn))
   }
+
+  const clearAllBtns = (e)=>{
+    setSelectedBtn([])
+  }
   
   return <div className='App'>
     <Header />
     <main>
-      <Filter removeBtn= {removeBtn} selectedBtn = {selectedBtn}/>
+      <Filter removeBtn= {removeBtn} selectedBtn = {selectedBtn} clearAllBtns = {clearAllBtns}/>
       <Jobs jobs = {jobs} click = {click} />
     </main>
   </div>;
