@@ -112,6 +112,7 @@ main .filter-container .selected-btn button span {
   background: #5ba4a4;
   padding: 1rem 0.9rem;
   position: relative;
+  margin-left: 0.5rem;
   right: 0;
 }
 
