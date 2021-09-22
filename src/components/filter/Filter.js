@@ -3,7 +3,7 @@ import FilterBtn from './FilterBtn';
 
 const Filter = ({ selectedBtn }) => {
   return (
-    <div className='filter-container'>
+    <div className='filter-container'  style ={selectedBtn.length > 0? {display:'block'} :{display:'none'}} >
       <div className='selected-btn'>
           <FilterBtn btns={selectedBtn} />
       </div>
