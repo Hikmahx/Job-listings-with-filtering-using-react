@@ -28,11 +28,16 @@ function App() {
 
     setSelectedBtn(oldBtn =>[...oldBtn, btn])
   }
+
+  const removeBtn = (e) =>{
+    let btn = e.target.parentElement.parentElement.textContent
+    setSelectedBtn(selectedBtn.filter((selectBtn)=> selectBtn !== btn))
+  }
   
   return <div className='App'>
     <Header />
     <main>
-      <Filter btn= {click}  selectedBtn = {selectedBtn}/>
+      <Filter removeBtn= {removeBtn} selectedBtn = {selectedBtn}/>
       <Jobs jobs = {jobs} click = {click} />
     </main>
   </div>;
