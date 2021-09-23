@@ -49,7 +49,7 @@ function App() {
     <Header />
     <main>
       <Filter removeBtn= {removeBtn} selectedBtn = {Array.from(new Set(selectedBtn))} clearAllBtns = {clearAllBtns}/>
-      <Jobs jobs = {jobs} click = {click} />
+      <Jobs jobs = {jobs} selectedBtn = {Array.from(new Set(selectedBtn))} click = {click} />
     </main>
   </div>;
 }
