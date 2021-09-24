@@ -3,7 +3,7 @@ import React from 'react';
 const JobItem = props => {
 
   return (
-    <li className={props.featured  ===true? 'job cyan-border': 'job'}>
+    <li style = {props.displayCard} className={props.featured  ===true? 'job cyan-border': 'job'}>
       <div className={props.featured  ===true? ' cyan-border': ''}>
         <img src={props.logo} alt="banner"/>
         <div className='company'>
