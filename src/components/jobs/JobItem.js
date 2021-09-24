@@ -4,7 +4,6 @@ const JobItem = props => {
 
   return (
     <li style = {props.displayCard} className={props.featured  ===true? 'job cyan-border': 'job'}>
-      <div className={props.featured  ===true? ' cyan-border': ''}>
         <img src={props.logo} alt="banner"/>
         <div className='company'>
           <h2>{props.company}</h2>
@@ -27,7 +26,6 @@ const JobItem = props => {
            {props.languages}
           {props.tools} 
         </div>
-      </div>
     </li>
   );
 };
