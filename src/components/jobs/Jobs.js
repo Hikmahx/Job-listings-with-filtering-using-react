@@ -14,10 +14,10 @@ const Jobs = ({jobs, click, selectedBtn}) => {
     if(selectedBtn.length > 0 ){
       let jobBtnArray = Array.from([job.role, job.level, ...job.tools, ...job.languages])
 
-      selectedBtn.every(btn=> jobBtnArray.includes(btn))? jobDisplay = {display: 'block'} : jobDisplay =  {display: 'none'}
+      selectedBtn.every(btn=> jobBtnArray.includes(btn))? jobDisplay = {display: ''} : jobDisplay =  {display: 'none'}
       return jobDisplay
     }else{
-      jobDisplay = {display: 'block'}
+      jobDisplay = {display: ''}
       return jobDisplay
     } 
 }
