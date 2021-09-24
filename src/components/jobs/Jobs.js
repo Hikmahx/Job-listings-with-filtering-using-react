@@ -9,18 +9,18 @@ const Jobs = ({jobs, click, selectedBtn}) => {
   
 
   const displayCard = (job) =>{
-    let jobId = ''
+    let jobDisplay = ''
 
     if(selectedBtn.length > 0 ){
       let jobBtnArray = Array.from([job.role, job.level, ...job.tools, ...job.languages])
 
-      selectedBtn.every(btn=> jobBtnArray.includes(btn))? jobId = {display: 'block'} : jobId =  {display: 'none'}
+      selectedBtn.every(btn=> jobBtnArray.includes(btn))? jobDisplay = {display: 'block'} : jobDisplay =  {display: 'none'}
       console.log(job.id)
-      return jobId
+      return jobDisplay
     }else{
-      jobId = {display: 'block'}
+      jobDisplay = {display: 'block'}
       console.log(job.id)
-      return jobId
+      return jobDisplay
     } 
 }
 
