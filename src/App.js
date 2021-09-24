@@ -27,13 +27,6 @@ function App() {
     let btn = e.target.textContent
 
     setSelectedBtn(oldBtn =>[...oldBtn, btn])
-
-    setJobs(jobs.filter(job=>( 
-      job.role.includes(btn) || 
-      job.level.includes(btn) ||
-      job.tools.includes(btn) ||
-      job.languages.includes(btn) && job)))
-
   }
 
   const removeBtn = (e) =>{
