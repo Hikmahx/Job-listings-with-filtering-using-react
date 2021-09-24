@@ -15,11 +15,9 @@ const Jobs = ({jobs, click, selectedBtn}) => {
       let jobBtnArray = Array.from([job.role, job.level, ...job.tools, ...job.languages])
 
       selectedBtn.every(btn=> jobBtnArray.includes(btn))? jobDisplay = {display: 'block'} : jobDisplay =  {display: 'none'}
-      console.log(job.id)
       return jobDisplay
     }else{
       jobDisplay = {display: 'block'}
-      console.log(job.id)
       return jobDisplay
     } 
 }
