@@ -42,6 +42,7 @@ function App() {
   return <div className='App'>
     <Header />
     <main>
+    <h1>Job list filtering page</h1>
       <Filter removeBtn= {removeBtn} selectedBtn = {Array.from(new Set(selectedBtn))} clearAllBtns = {clearAllBtns}/>
       <Jobs jobs = {jobs} selectedBtn = {Array.from(new Set(selectedBtn))} click = {click} />
       <Attribution/>
