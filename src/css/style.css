@@ -49,6 +49,15 @@ main {
   background: #effafa;
 }
 
+main h1{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px;
+}
+
 main .filter-container {
   position: relative;
   background: #fff;
