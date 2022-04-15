@@ -56,6 +56,15 @@ header{
 
 main{
   background: $grayish-cyan-bg;
+  
+  h1{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+  }
 
   .filter-container{
     position: relative;
